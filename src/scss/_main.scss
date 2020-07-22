@@ -1,0 +1,201 @@
+.validate-form {
+  .form {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#1e272e),
+      to(#485460)
+    );
+    background: linear-gradient(to right, #1e272e, #485460);
+    padding: 10px 20px 10px;
+    border-radius: 8px;
+    .register-title {
+      color: white;
+      margin-bottom: 40px;
+      position: relative;
+      overflow: hidden;
+      min-height: 56px;
+      h2 {
+        font-size: 35px;
+        font-family: tahoma;
+        letter-spacing: 1px;
+        position: relative;
+        color: #ddd;
+        text-align: center;
+        &::after,
+        &::before {
+          content: "";
+          position: absolute;
+          top: 55%;
+          left: 0;
+          width: 35%;
+          height: 1px;
+          background: #ddd;
+        }
+
+        &::before {
+          left: auto;
+          right: 0;
+        }
+        @media (max-width: 574px) {
+          &::after,
+          &::before {
+            width: 25%;
+          }
+        }
+
+        @media (max-width: 394px) {
+          &::after,
+          &::before {
+            width: 18%;
+            top: 58%;
+          }
+        }
+      }
+      p {
+        color: #ddd;
+        margin-top: 15px;
+      }
+    }
+    .form-group:not(:last-of-type) {
+      .box-container {
+        position: relative;
+        height: 55px;
+        border: 1px groove #eee;
+        border-radius: 5px;
+        margin-top: 30px;
+        .form-label {
+          position: absolute;
+          top: -16px;
+          left: 20px;
+          padding: 3px 15px;
+          z-index: 1;
+          background: #262f37;
+          color: #cccccc;
+          border-radius: 3px;
+          border: 1px solid #eee;
+        }
+        .form-control {
+          position: absolute;
+          left: 0;
+          bottom: 5px;
+          border-radius: 0;
+          border: none;
+          font-size: 14px;
+          text-transform: capitalize;
+          box-shadow: none;
+          padding: 10px 35px 0 10px;
+          background: none;
+          color: #eee;
+          &:focus {
+            box-shadow: none;
+          }
+          &::-webkit-input-placeholder {
+            color: #eee;
+            font-size: 13px;
+          }
+          &::-moz-placeholder {
+            color: #eee;
+            font-size: 13px;
+          }
+          &:-ms-input-placeholder {
+            color: #eee;
+            font-size: 13px;
+          }
+          &::-ms-input-placeholder {
+            color: #eee;
+            font-size: 13px;
+          }
+          &::placeholder {
+            color: #eee;
+            font-size: 13px;
+          }
+        }
+
+        .icon {
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+          color: #eee;
+          font-size: 20px;
+          .fa-envelope {
+            font-size: 17px;
+          }
+        }
+
+        &.not-valid {
+          border-color: #eb4d4b;
+          .form-label {
+            border-color: #eb4d4b;
+          }
+          & + span.error {
+            color: #eb4d4b;
+            display: block;
+            margin-top: 8px;
+          }
+        }
+
+        &.is-valid {
+          border-color: #2df18f;
+          .form-label {
+            border-color: #2df18f;
+          }
+        }
+      }
+    }
+
+    .form-group:last-of-type {
+      margin-top: 20px;
+      width: 130px;
+      text-align: center;
+      .btn-danger {
+        background: #eb4d4b !important;
+        border: none;
+        height: 40px;
+        font-size: 18px;
+        color: azure;
+        border-radius: 5px !important;
+        &:hover {
+          background: #e74c3c !important;
+          opacity: 0.9;
+        }
+        @media (max-width: 343px) {
+          font-size: 15px;
+          padding: 0px 10px !important;
+          width: auto;
+        }
+      }
+    }
+
+    .sign-in {
+      color: #eee;
+      text-align: right;
+      font-family: tahoma;
+      font-size: 13px;
+      -webkit-transition: ease 0.5s;
+      transition: ease 0.5s;
+      a {
+        color: #eb4d4b;
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 3px;
+        &:hover {
+          text-decoration: none;
+          color: #f15865;
+        }
+      }
+      & {
+        @media (max-width: 343px) {
+          display: block;
+          text-align: left;
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
