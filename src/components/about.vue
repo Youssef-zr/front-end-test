@@ -21,7 +21,7 @@
                     <i class="fa fa-check"></i>
                   </div>
                   <div class="service-desc">
-                    <h3>Concierge service ( 8am - 8pm daily )</h3>
+                    <h3>Concierge Service ( 8am - 8pm daily )</h3>
                     <p>
                       We deliver or pick up at your doorstep . Always
                       have a parking spot right out front , just for you.
