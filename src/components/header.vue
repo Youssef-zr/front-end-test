@@ -24,7 +24,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-8 col-sm-6 col-md-5 img-subs">
+          <div class="col-xs-8 col-sm-6 col-md-5 img-subs hidden-xs">
             <div class="subs-image">
               <img src="dist/img/car1.gif" alt="care 1 image" class="img-responsive" />
             </div>
