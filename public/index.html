@@ -14,6 +14,32 @@
       font-family: 'MyWebFont';
       src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'),
     }
+
+    .__loading {
+      background: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 589654;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      overflow-y: hidden;
+      /* Hide vertical scrollbar */
+      overflow-x: hidden;
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+
+    }
+
+    .loading .load-image {
+      width: 200px;
+      height: 200px;
+    }
   </style>
 </head>
 
@@ -22,6 +48,11 @@
     <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
       Please enable it to continue.</strong>
   </noscript>
+  <div class="__loading">
+    <div class="load-image">
+      <img src="dist/img/loading.gif" alt="loading image">
+    </div>
+  </div>
   <div id="app"></div>
   <!-- built files will be auto injected -->
 

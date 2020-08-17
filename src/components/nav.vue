@@ -1,10 +1,5 @@
 <template>
   <div class="nav">
-    <div class="__loading">
-      <div class="load-image">
-        <img src="dist/img/loading.gif" alt="loading image">
-      </div>
-    </div>
     <div class="container">
       <div class="row">
         <a class="toggle-nav">
@@ -55,23 +50,7 @@
 </template>
 
 <style lang="scss">
-.__loading{
-  background:#fff;
-  position:fixed;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 589654;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  .load-image{
-    width:200px;
-    height:200px;
-  }
-}
+
 .nav {
   position: fixed;
   background: #f6f5f8;
