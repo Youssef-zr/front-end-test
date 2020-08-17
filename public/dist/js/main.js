@@ -101,4 +101,7 @@ $(() => {
       800
     );
   });
+
+  // hide the loading image when the document is ready
+    $(".__loading").hide();
 });

@@ -141,6 +141,7 @@ export default {};
         @media (min-width: 992px) {
           position: absolute;
           top: -30px;
+          left:0
         }
       }
       .head {

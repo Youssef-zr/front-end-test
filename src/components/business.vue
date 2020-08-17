@@ -140,7 +140,7 @@
         <div class="next-stup">
           <div class="col-sm-6 col-md-3">
             <div class="stup up">
-              <div class="image">
+              <div class="image first">
                 <img src="dist/img/logoOne.png" alt="stup 1" class="img-responsive" />
               </div>
               <div class="content text-center">
@@ -220,7 +220,6 @@ export default {};
     .image {
       width: 65%;
       height: 500px;
-      // border: 1px solid #eee;
       padding: 2px;
       // background: #eee;
       img {
@@ -344,9 +343,7 @@ export default {};
             right: -31px;
             transform: rotate(-22deg);
           }
-          .image{
-            margin-bottom: 45px !important;
-          }
+         
         }
         &.up::after {
           content: url("../../public/dist/img/circle.png");
@@ -366,14 +363,18 @@ export default {};
 
       .image {
         width: 77px;
-        height: 53px;
+        height: 80px;
         border-radius: 50%;
-        margin: 0 auto;
+        margin: 0 auto 20px;
+        // background: #000 !important;
+       &.first{
+         height:70px;
+       }
       }
       .content {
         h3 {
           color: #555;
-          margin: 20px 0;
+          margin: 20px 0 10px;
         }
         p {
           color: #777;
