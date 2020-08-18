@@ -120,7 +120,7 @@ $(() => {
     scrollspeed: 300, // scrolling speed
     // touchbehavior: true, // DEPRECATED!! use "touchemulate"
     autohidemode: false, // how hide the scrollbar works, possible values:
-    cursorfixedheight: 100, // set fixed height for cursor in pixel
+    cursorfixedheight: 105, // set fixed height for cursor in pixel
   });
 
 });
