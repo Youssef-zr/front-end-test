@@ -125,6 +125,8 @@ export default {
       }
     }
   }
+
+
   @media (max-width: 992px) {
     .img-subs {
       // background: red;

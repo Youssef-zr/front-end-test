@@ -103,5 +103,24 @@ $(() => {
   });
 
   // hide the loading image when the document is ready
-    $(".__loading").hide();
+  $(".__loading").css({
+    height: $(window).height(),
+  });
+
+  setTimeout(() => {
+    $(".__loading").fadeOut();
+  }, 1500);
+
+  // nice scroll plugin
+  $("body").niceScroll({
+    cursorcolor: "#45b9fc", // change cursor color in hex
+    cursorwidth: "10px", // cursor width in pixel (you can also write "5px"
+    // cursorborder: "2px solid red", // css definition for cursor border
+    zindex: "auto" | [9658965], // change z-index for scrollbar div
+    scrollspeed: 300, // scrolling speed
+    // touchbehavior: true, // DEPRECATED!! use "touchemulate"
+    autohidemode: false, // how hide the scrollbar works, possible values:
+    cursorfixedheight: 100, // set fixed height for cursor in pixel
+  });
+
 });
