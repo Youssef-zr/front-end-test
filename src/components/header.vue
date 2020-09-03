@@ -8,7 +8,7 @@
           <div class="col-sm-12 col-md-7">
             <div class="subscription">
               <h2>
-                just drive .
+                just drive you car.
                 <br />we'll do the rest.
               </h2>
               <p>all-inclusive,usage-based subscriptions.</p>
