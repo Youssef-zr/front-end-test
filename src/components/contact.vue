@@ -252,6 +252,9 @@ body {
             left: 11px;
           }
         }
+        @media (max-width:430px){
+          margin-top: 20px;
+        }
       }
     }
   }

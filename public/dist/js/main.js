@@ -113,7 +113,7 @@ $(() => {
 
   // nice scroll plugin
   $("body").niceScroll({
-    cursorcolor: "#032760", // change cursor color in hex
+    cursorcolor: "#333456", // change cursor color in hex
     cursorwidth: "10px", // cursor width in pixel (you can also write "5px"
     // cursorborder: "2px solid red", // css definition for cursor border
     zindex: "auto" | [9658965], // change z-index for scrollbar div
