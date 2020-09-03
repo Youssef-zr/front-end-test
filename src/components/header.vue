@@ -39,7 +39,7 @@
             </div>
             <div class="col-md-2">
               <div class="scroll-down">
-                <a href="#" class="sc-to-business" data-scroll='business'>
+                <a href="#" class="sc-to-business" data-scroll="business">
                   <i class="fa fa-arrow-down" aria-hidden="true"></i>
                 </a>
               </div>
@@ -65,22 +65,21 @@ export default {
 <style lang="scss" scoped>
 .header {
   height: 100vh;
-  background: url('../../public/dist/img/garage.jpg') no-repeat center top #222;
+  background: url("../../public/dist/img/garage.jpg") no-repeat center top #222;
   background-size: cover;
 
   padding-top: 70px;
   text-transform: capitalize;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    .overlay{
-      position:absolute;
-      top:0;
-      left:0;
-      width: 100%;
-      height: 100%;
-      background:rgba(62, 25, 87, 0.4)
-
-    }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(62, 25, 87, 0.4);
+  }
   .b-position {
     height: 100%;
     display: flex;
@@ -99,6 +98,7 @@ export default {
       margin: 25px 0;
     }
     .form-subscribe {
+      background: green;
       .input {
         width: 45%;
         margin-right: 40px;
@@ -122,10 +122,14 @@ export default {
         width: calc(100% - 55%);
         float: left;
         padding-top: 10px;
+        @media (max-width: 430px) {
+          width:160px;
+          padding-top:20px;
+          margin-bottom:20px
+        }
       }
     }
   }
-
 
   @media (max-width: 992px) {
     .img-subs {

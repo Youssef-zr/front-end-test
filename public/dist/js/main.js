@@ -113,11 +113,11 @@ $(() => {
 
   // nice scroll plugin
   $("body").niceScroll({
-    cursorcolor: "#45b9fc", // change cursor color in hex
+    cursorcolor: "#032760", // change cursor color in hex
     cursorwidth: "10px", // cursor width in pixel (you can also write "5px"
     // cursorborder: "2px solid red", // css definition for cursor border
     zindex: "auto" | [9658965], // change z-index for scrollbar div
-    scrollspeed: 300, // scrolling speed
+    scrollspeed: 50, // scrolling speed
     // touchbehavior: true, // DEPRECATED!! use "touchemulate"
     autohidemode: false, // how hide the scrollbar works, possible values:
     cursorfixedheight: 105, // set fixed height for cursor in pixel
