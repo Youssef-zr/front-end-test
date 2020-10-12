@@ -1,5 +1,5 @@
 $(() => {
-  $(".toggle-nav").click(function() {
+  $(".toggle-nav").on('click',function() {
     $(this).toggleClass("opned");
     $(".links").toggleClass("nav-active");
   });
@@ -103,9 +103,15 @@ $(() => {
   });
 
   // hide the loading image when the document is ready
-  $(".__loading").css({
-    height: $(window).height(),
-  });
+   // LOADING PAGE
+   setTimeout(() => {
+    $("body.is_loading")
+      .css({
+        overflow: "visible",
+      })
+      .find(".__loading")
+      .fadeOut(700);
+  }, 1000);
 
   setTimeout(() => {
     $(".__loading").fadeOut();
