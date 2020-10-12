@@ -1,5 +1,5 @@
 $(() => {
-  $(".toggle-nav").on('click',function() {
+  $(".toggle-nav").on("click", function() {
     $(this).toggleClass("opned");
     $(".links").toggleClass("nav-active");
   });
@@ -103,19 +103,12 @@ $(() => {
   });
 
   // hide the loading image when the document is ready
-   // LOADING PAGE
-   setTimeout(() => {
+  // LOADING PAGE
+  setTimeout(() => {
     $("body.is_loading")
-      .css({
-        overflow: "visible",
-      })
       .find(".__loading")
       .fadeOut(700);
   }, 1000);
-
-  setTimeout(() => {
-    $(".__loading").fadeOut();
-  }, 1500);
 
   // nice scroll plugin
   $("body").niceScroll({
@@ -128,5 +121,4 @@ $(() => {
     autohidemode: false, // how hide the scrollbar works, possible values:
     cursorfixedheight: 105, // set fixed height for cursor in pixel
   });
-
 });
